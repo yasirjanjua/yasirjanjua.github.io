@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Yasir Janjua</title>
+    <link>https://yasirjanjua.github.io</link>
+    <description />
+    <item>
+      <guid>https://yasirjanjua.github.io/</guid>
+      <title>Yasir Janjua</title>
+      <link>https://yasirjanjua.github.io/</link>
+      <description>Yasir Janjua is a professional Software Engineer with an adequate industry experience. He provides enterprise application solutions and loves to develop web applications with the best practices.</description>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="b6e24155-9e94-49e8-a040-d229fe992785" />-->
