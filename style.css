@@ -71,7 +71,6 @@ a {
 	margin: 10px 0;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	text-shadow: 1px 1px 0.5px #5e5e5e;
 	letter-spacing: 2px;
 }
 
@@ -79,7 +78,6 @@ a {
 	font-size: 3.5rem;
 	margin: 10px 0;
 	font-family: 'Lora', serif;
-	text-shadow: 0.1px 0.1px 0.1px #5e5e5e;
 	font-weight: 500;
 }
 
@@ -88,7 +86,6 @@ a {
 	margin: 0 20px;
 	word-wrap: normal;
 	font-weight: 200;
-	text-shadow: 0.1px 0.1px 0.1px #5e5e5e;
 	font-family: 'Lora', serif;
 }
 
