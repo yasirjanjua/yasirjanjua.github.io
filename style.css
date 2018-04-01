@@ -1,57 +1,165 @@
+:root{
+	--base: #009975 ;
+	--accent: #424242 ;
+}
+
 *{
 	box-sizing: border-box;
 }
 
 html{
-	height: 100vh;
-	width: 100%;
+	font-size: 10px;
 }
 
 body{
 	margin: 0;
-	height: 100%;
 }
 
-.wrapper{
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-flow: column nowrap;
-	align-items: center	;
-	background: linear-gradient(43deg, #e3d77d, #e9e7a9, #cfa9e9, #e9b9a9, #a9d1e9, #a9afe9);
-	background-size: 1200% 1200%;
-
-	-webkit-animation: AnimationName 30s ease infinite;
-	-moz-animation: AnimationName 30s ease infinite;
-	animation: AnimationName 30s ease infinite;
-}
-
-	@-webkit-keyframes AnimationName {
-	    0%{background-position:0% 51%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 51%}
-	}
-	@-moz-keyframes AnimationName {
-	    0%{background-position:0% 51%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 51%}
-	}
-	@keyframes AnimationName { 
-	    0%{background-position:0% 51%}
-	    50%{background-position:100% 50%}
-	    100%{background-position:0% 51%}
-	}
-
-
-.name{
-	margin:0 auto;
-	font-size: 4em;
-	text-transform: capitalize;
-	border: 2px solid #000;
-	padding: 1em;
-}
-
-a{
+a {
 	text-decoration: none;
-	color: #000;
+	text-decoration-color: #000;
+}
+
+.portfolio {
+	display: flex;
+	margin: 0;
+	flex-flow: column nowrap;
+	width: 100%;
+}
+
+/* .portfolio__section:nth-child(4n+1){ background: #BADA55}
+.portfolio__section:nth-child(4n+2){ background: rgb(218, 149, 85)}
+.portfolio__section:nth-child(4n+3){ background: rgb(218, 85, 158)}
+.portfolio__section:nth-child(4n+4){ background: rgb(187, 85, 218)} */
+
+.portfolio__section{
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.hero{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 2.5rem;
+	padding: 1rem 10%;
+	text-align: center;
+	color: var(--accent);
+	background:
+		linear-gradient(
+			var(--base),
+			#14A9894d
+			),
+			url(./images/bg.jpeg);
+			background-size: cover;
+}
+
+.hero__image{
+	height: auto;
+	width: 200px;
+	margin-bottom: 20px;
+	border-radius: 50% / 50%;
+	box-shadow:0 0 10px 0 #424242;
+}
+
+.hero__name{
+	font-size: 5rem;
+	margin: 10px 0;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0.5px #5e5e5e;
+	letter-spacing: 2px;
+}
+
+.hero__title{
+	font-size: 3.5rem;
+	margin: 10px 0;
+	font-family: 'Lora', serif;
+	text-shadow: 0.1px 0.1px 0.1px #5e5e5e;
+	font-weight: 500;
+}
+
+.hero__description{
+	font-size: 2.5rem;
+	margin: 0 20px;
+	word-wrap: normal;
+	font-weight: 200;
+	text-shadow: 0.1px 0.1px 0.1px #5e5e5e;
+	font-family: 'Lora', serif;
+}
+
+.socials{
+	margin-top: 10px;
+	padding: 1rem;
+}
+
+.social__connect {
+	padding: 5px 0;
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	font-size: 2.5rem;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.social__connect a {
+	text-decoration: none;
+	text-decoration-color: none;
+	color: 	var(--base);
+}
+
+.social__connect:hover {
+	transform: scale(1.2);
+}
+
+.social__connect--link:hover  { color: #0077B5 }
+.social__connect--fb:hover { color: #3B5998 }
+.social__connect--tweet:hover { color: #1DA1F2 }
+.social__connect--git:hover { color: #272626 }
+
+.news{
+	position: fixed;
+	bottom: 0;
+	right: 0px;
+	margin: 20px;
+	height: 70px;
+	max-width: 180px;
+	padding: 15px 20px;
+	font-size: 1.5em;
+	background: #ffffff70;
+	color: var(--accent);
+	transform: translate(200px);
+	transition: ease-in all 0.2s;
+	will-change: transfrom;
+}
+
+.news:hover{
+	background: #ffffffd0;
+}
+
+.news__remove{
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+.news__remove:hover{
+	transform: scale(1.2);
+}
+
+.news__content__link a{
+	color: var(--base);
+}
+
+.news--active{
+	transform: translate(0);
+
 }

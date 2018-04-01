@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Yasir Janjua - Portfolio | Software Engineer, Web Developer &amp; WSO2 Expert</title>
 	<!-- Software Engineer | Web Developer | WSO2 Expert | Angular Expert -->
-	<meta name="description" content="Yasir Janjua is a Software Engineer, Web Developer &amp; WSO2 expert. He provides enterprise application solutions and loves to develop web applications with the best industry standards."/>
-	<meta name="keywords" content="Full Stack Web Developer, Software Engineer, WSO2 Expert, Application Developer, JavaScript Developer, Angular Expert, Yasir Janjua Portfolio"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Yasir Janjua is a Software Engineer, Web Developer &amp; WSO2 expert. He provides enterprise application solutions and loves to develop web applications with the best industry standards."
+	/>
+	<meta name="keywords" content="Full Stack Web Developer, Software Engineer, WSO2 Expert, Application Developer, JavaScript Developer, Angular Expert, Yasir Janjua Portfolio"
+	/>
 	<meta name="author" content="Yasir Janjua">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="3 days">
 
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Lora:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div class="wrapper">
-		<h1 class="name"><a href="http://github.com/yasirjanjua">Yasir Janjua</a></h1>
+	<main class="portfolio">
+		<section class="portfolio__section">
+			<header>
+				<nav></nav>
+			</header>
+			<article class="hero">
+				<img class="hero__image" src="./images/yasirjanjua.JPG" alt="yasir janjua">
+				<h1 class="hero__name">Yasir Janjua</h1>
+				<h3 class="hero__title">Software Engineer | Web Developer | WSO2 Expert</h3>
+				<p class="hero__description">I create awesome websites &amp; web applications</p>
+				<div class="socials">
+					<div class="social__connect">
+						<a class="social__connect--link" target="_blank" href="https://linkedin.com/in/yasirjanjua/">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+					<!-- <div class="social__connect">
+						<a class="social__connect--fb" href="">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</div> -->
+					<div class="social__connect">
+						<a class="social__connect--tweet" target="_blank" href="https://twitter.com/YasirJanjua_/">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</div>
+					<div class="social__connect">
+						<a class="social__connect--git" target="_blank" href="https://github.com/yasirjanjua/">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- <section class="portfolio__section"></section> -->
+	</main>
+	<div class="news">
+		<span class="news__remove">&times;</span>
+		<div class="news__content">Check out latest work!
+			<span class="news__content__link">
+				<a href="https://yasirjanjua.github.io/JavaScript30" target="_blank">JavaScript 30</a>
+			</span>
+		</div>
 	</div>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+	 crossorigin="anonymous"></script>
+	<script>
+		const news = document.querySelector('.news');
+		const newsBtn = document.querySelector('.news__remove');
+
+		setTimeout(() => {
+			news.classList.add('news--active');
+		}, 3000);
+
+		function removeNews() {
+			if (news.classList.contains('news--active')) news.classList.remove('news--active');
+			return;
+		}
+
+
+		newsBtn.addEventListener('click', removeNews);
+
+	</script>
 </body>
+
 </html>
