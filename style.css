@@ -129,12 +129,12 @@ a {
 	right: 0px;
 	margin: 20px;
 	height: 70px;
-	max-width: 180px;
+	width: 220px;
 	padding: 15px 20px;
-	font-size: 1.5em;
+	font-size: 1.7em;
 	background: #ffffff70;
 	color: var(--accent);
-	transform: translate(200px);
+	transform: translate(250px);
 	transition: ease-in all 0.2s;
 	will-change: transfrom;
 }
@@ -162,4 +162,22 @@ a {
 .news--active{
 	transform: translate(0);
 
+}
+
+@media only screen and (max-width: 40rem) {
+
+	html{
+		font-size: 7px;
+	}
+	.hero {
+		padding: 5%;
+	}
+
+	.hero__image{
+		width: 150px;
+	}
+
+	.news{
+		width: 180px;
+	}
 }
